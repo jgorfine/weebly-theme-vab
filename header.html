@@ -1,43 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
-	<meta name="viewport" content="width=device-width, initial-scale=1.0;">
-</head>
-
-<body class="header-page">
-
-	<div id="wrapper">
-
-		<div id="header">
+	<head>
+		<link rel="canonical" href="">
+		<!-- METADATA -->
+    <!-- ~Setup -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    <!-- ~Bots -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+    <!-- ~Social Share -->
+    <!-- ~-title -->
+    <title></title> 
+    <meta itemprop="name" content="">
+    <!-- ~-description -->
+    <meta name="description" content="">
+    <meta itemprop="description" content="">
+    <!-- ~-image -->
+    <meta property="og:image:secure_url" content="">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="">
+    <meta property="og:image:height" content="">
+    <meta property="og:image" content="">
+    <meta name="twitter:image:src" content="">
+    <meta name="twitter:image:alt" content="Virginia Bronze">
+    <meta itemprop="image" content="">
+    <!-- ~-app -->
+    <!--<meta property="twitter:app:name:googleplay" content="">
+    <meta property="twitter:app:id:googleplay" content="">
+    <meta property="twitter:app:url:googleplay" content="">-->
+    <!-- content type -->
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <!-- ~-content creator -->
+    <meta property="og:site_name" content="Virginia Bronze">
+    <meta property="fb:app_id" content="">
+    <meta name="twitter:creator" content="@VirginiaBronze">
+    <meta name="twitter:site" content="@VirginiaBronze">
+	</head>
+	<body class="page page--with-header">
+		<nav role="navigation">
 			<div class="container">
-				<label id="menu-button" class="hamburger" for="mobile-input"><span></span></label>
-				{logo}
-				<div id="nav">{menu}</div>
+				<a href="">{logo}</a>
+				<div>{menu}</div>
 			</div>
-			<div id="mobile-nav">
-				<input type="checkbox" id="mobile-input">
-				{menu}
-			</div>
-		</div>
-
-		<div id="banner">
-			{{#header}}
-				<div class="container">{content}</div>
-			{{/header}}
-		</div>
-
-		<div id="main">
+		</nav>
+		{{#header}}
+			<header role="banner">
+				<div class="container">
+					<h1>{page-title:text}</h1>
+					<p>{page-subtitle:text}</p>
+					<ol class="events-preview">
+						<li class="event-preview--primary" id="event-preview--1">
+							<a href="">
+								<div class="event-preview__image">{event-1-image:image}</div>
+								<div class="event-preview__desc">
+									<h2>{event-1-name:text}</h2>
+									<span>{event-1-date:text}</span>
+									<p>{event-1-blurb:text}</p>
+								</div>
+								<div class="event-preview__cta">{action:button}</div>
+							</a>
+						</li>
+						<li class="event-preview--secondary" id="event-preview--2">
+							<a href="">
+								<div class="event-preview__image">{event-2-image:image}</div>
+								<div class="event-preview__desc">
+									<h2>{event-2-name:text}</h2>
+									<span>{event-2-date:text}</span>
+									<p>{event-2-blurb:text}</p>
+								</div>
+								<div class="event-preview__cta">{action:button}</div>
+							</a>
+						</li>
+						<li class="event-preview--secondary" id="event-preview--3">
+							<a href="">
+								<div class="event-preview__image">{event-3-image:image}</div>
+								<div class="event-preview__desc">
+									<h2>{event-3-name:text}</h2>
+									<span>{event-3-date:text}</span>
+									<p>{event-3-blurb:text}</p>
+								</div>
+								<div class="event-preview__cta">{action:button}</div>
+							</a>
+						</li>
+					</ol>
+					<a href="">See our full schedule &rdquo;</a>
+				</div>
+			</header>
+		{{/header}}
+		<main role="main">
 			{{#sections}}
-				<div class="container">{content}</div>
+				<div class="container">
+					{content}
+				</div>
 			{{/sections}}
-		</div>
-
-		<div id="footer">{footer}</div>
-
-	</div>
-
-	<script type="text/javascript" src="/files/theme/plugins.js"></script>
-	<script type="text/javascript" src="/files/theme/custom.js"></script>
-</body>
+		</main>
+		<footer role="footer">
+			<div class="container">
+				<nav class="footer__menu" role="navigation">
+					{menu}
+				</nav>
+				<div>
+					{footer}
+				</div>
+			</div>
+		</footer>
+		<script type="text/javascript" src="/files/theme/plugins.js"></script>
+		<script type="text/javascript" src="/files/theme/custom.js"></script>
+	</body>
 </html>

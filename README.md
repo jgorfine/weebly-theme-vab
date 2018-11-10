@@ -1,4 +1,4 @@
-#Weebly Base Theme - LESS Version
+# Weebly Base Theme - LESS Version
 
 ## Get Started with Weebly Themes
 
@@ -8,4 +8,4 @@ A Weebly theme provides a general structure and design palette for any website b
 
 To get started, create a web site that you can use to test your theme. Then download our Base theme as a starting point, and start building from there! Or find a theme you mostly like and then change the things you don't.
 
-[Weebly Theme Documentation](https://dev.weebly.com/get-started-with-themes.html)
+[Weebly Theme Documentation](https://dev.weebly.com/pf_themes_create_templates.html)
